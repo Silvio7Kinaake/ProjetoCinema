@@ -1,0 +1,296 @@
+
+header{
+    background:rgb(30, 30, 29);
+    padding: 0 0;   
+}
+body {
+    background: whitesmoke
+}
+.caixa {
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    }
+nav li {
+    display: inline;
+    margin: 0 0 0 22px;   
+}
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #1987c7;
+    text-decoration:underline;
+}
+.menu {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.menu li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    background: white;
+    margin: 0 1.5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+/* CSS Página inicial*/
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(221, 20, 30);
+    background: rgb(58, 56, 56);
+}
+/*slide em cartaz*/
+/*
+.cabecalhos{
+    font-size: 25px;
+    color:white ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+*/
+.titulo_Cartaz{
+    font-size: 20px;
+    color:blue;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 17%;
+    display: inline-block;  
+}
+.titulo_Lançamentos{
+    font-size: 20px;
+    color:rgb(43, 43, 151);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: justify;
+    display: inline-block;
+    padding-left: 38%;  
+}
+.slide_cartaz {
+    width: 45%;
+    height: 410px;
+    animation: slide_cartaz 10s infinite;
+    animation-direction: alternate;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 10px; 
+    
+}
+@keyframes slide_cartaz {
+    0%, 20% 
+    {
+        background-image: url(fotos/legado_explosivo2.jpg) ; 
+    }
+    25%, 45% {
+        background-image: url(fotos/mulher_maravilha2_1984.jpg) ;
+    }
+    50%, 70% {
+        background-image: url(fotos/minha_mae_e_uma_peca2_3.jpg) ;
+    }
+    75%, 100%{
+        background-image: url(fotos/tom-e-jerry-o-filme2.jpg) ;
+    }
+}
+/*slide próximos Lançamentos*/
+.proximosfilmes {
+    
+    width: 25%;
+    height: 410px;
+    animation: slide_proximos 15s infinite;
+    animation-direction: alternate;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 10px;  
+}
+
+@keyframes slide_proximos {
+    0%, 20% {
+        background-image: url(fotos/velozes&furiosos9.jpg) ;
+    }
+    25%, 45% {
+        background-image: url(fotos/herois-de-fogo.jpg) ;
+    }
+    50%, 70% {
+        background-image: url(fotos/intervencao.jpg) ;
+    }
+    75%, 100%{
+        background-image: url(fotos/veneza.jpg) ;
+    }
+}
+/*Apresentação das salas e ambiente */
+.ambiente {
+    width: 90%;
+    height: 500px;
+    animation: slide_salas 10s infinite;
+    animation-direction: alternate;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 15px; 
+}
+.titulo_ambiente{
+font-size: 20px;
+text-align: center;
+color: rgb(43, 43, 151);
+font-weight: bold;
+margin-top: 40px;
+}
+@keyframes slide_salas {
+    0%, 10% {
+        background-image: url(fotos/sala1.PNG) ;
+    }
+    15%, 25% {
+        background-image: url(fotos/sala2.PNG) ;
+    }
+    30%, 40% {
+        background-image: url(fotos/sala3.PNG) ;
+    }
+    45%, 50%{
+        background-image: url(fotos/sala4.PNG) ;
+    }
+    55%, 65%{
+        background-image: url(fotos/sala5.PNG);
+    }
+    70%, 80%{
+        background-image: url(fotos/sala6.PNG) ;
+    }
+    85%, 100%{
+        background-image: url(fotos/sala7.PNG) ;
+    }  
+}
+table {
+    margin: 20px 0 40px; 
+}
+thead {
+    background: rgb(66, 65, 65);
+    color: white;
+    font-weight: bold;
+}
+tbody {
+    color: rgb(12, 10, 10);
+    font-size: 16px;
+    font-weight: bold;
+}
+td, th {
+    padding: 5px 25px;  
+}
+.copyright {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+/* CSS slide imagens*/
+/*
+.galeria{
+    margin: 10px auto;
+    width: 480px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+.foto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform:scale(1.1,1.1);
+    }
+    50%{
+        opacity:0;
+    }
+}
+
+.foto:nth-child(1){
+    
+}
+.foto:nth-child(2){
+   animation-delay: 5s;
+}
+.foto:nth-child(3){
+  animation-delay: 10s;
+}
+.foto:nth-child(4){
+animation-delay: 15s;
+}
+
+
+
+
+PREMEIRO SLIDE
+.proximosfilmes {
+    width: 480px;
+    height: 270px;
+    margin: 250 auto;
+    animation: slide 7s infinite;
+    animation-direction: alternate;
+    
+    
+}
+
+@keyframes slide {
+    0%, 20% {
+        background-image: url(fotos/velozes&furiosos9.jpg) ;
+    }
+    25%, 45% {
+        background-image: url(fotos/herois-de-fogo.jpg) ;
+    }
+    50%, 70% {
+        background-image: url(fotos/intervencao.jpg) ;
+
+    }
+    75%, 100%{
+        background-image: url(fotos/veneza.jpg) ;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+*/

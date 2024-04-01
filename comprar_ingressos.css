@@ -1,0 +1,180 @@
+
+header{
+    background:rgb(32, 32, 31);
+    padding: 10px 0;
+}
+
+
+.caixa {
+    position: relative;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    }
+
+nav li {
+    display: inline;
+    margin: 0 0 0 22px;
+    
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #1987c7;
+    text-decoration:underline;
+
+}
+
+.menu {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    background: white;
+    margin: 0 1.5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.menu li:hover {
+    border-color:#c75f19;
+
+}
+
+.menu li:active{
+    border-color:blue;
+}
+
+.menu li:hover p {
+    font-size: 25px;
+}
+
+.menu p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.produto_descricao{
+    font-size: 18px;
+}
+
+.preco_produto {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+.copyright {
+    color: blue;
+    font-size: 15px;
+    padding: 0 0;
+
+    
+}
+
+.introducao {
+font-size: 22px;
+color: blue;
+font-weight: bold;
+margin: 10px 0 0;
+
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 10px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.input_padao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 5px 20px;
+    width: 30%;
+}
+
+.orientacao_escolha {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+
+}
+
+.selecao_filmes{
+    display: block;
+    margin: 0 0 10px;
+    padding: 6px 20px;
+    width: 35%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.poltrona{
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+fieldset{
+    margin: 0 0 15px; 
+}
+
+.titulo_categoria {
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.valor_cat {
+    margin: 0 0 10px;
+}
+.enviar{
+    width: 20%;
+    padding: 10px 0;
+    background: coral;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.enviar:hover{
+    background:blue;
+    transform: scale(1.2);
+}

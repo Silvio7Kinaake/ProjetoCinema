@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ingressos</title>
+      <link rel="stylesheet" type= "text/css" href="reset.css">
+      <link rel="stylesheet" type= "text/css" href="comprar_ingressos.css">
+    </head> <body>
+      <header> 
+            
+       <div class= "caixa">
+          <h1><img src="fotos/fundo.jpg"><img src="fotos/ticket.jpg"></h1>
+           <nav>
+              <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="em_cartaz.html">Em Cartaz</a></li>
+                 <li><a href="produtos.html">Snack Bar</a></li> 
+                 <li><a href="comprar_ingresso.html">Comprar Ingressos</a></li>
+              </ul>
+           </nav>
+       </div>
+      </header>
+
+      <main>
+        <h1 class = "introducao">Informe dos Dados Abaixo</h1>
+          <form>
+              <label for= "nome">Primeiro Nome</label>
+              <input type="text" id="nome" class="input_padao" required>
+
+              <label for= "sobrenome">Último Sobrenome</label>
+              <input type="text" id="sobrenome" class="input_padao" required>
+
+              <label for= "telefone">Telefone</label>
+              <input type="tel" id="telefone" class="input_padao" required
+              placeholder="(XX) XXXXX-XXXX">
+
+              <fieldset>
+                <legend class = "orientacao_escolha">Selecione o Filme</legend>
+                <select class= "selecao_filmes" id= "selecao_filmes">
+                    <option>LEGADO EXPLOSIVO  / Sessão 19:00h as 20:45h</option>
+                    <option>LEGADO EXPLOSIVO  / Sessão 21:00h as 22:45h</option>
+                    <option>MULHER-MARAVILHA 1984  / Sessão 20:00h as 21:30h</option>
+                    <option>MULHER-MARAVILHA 1984  / Sessão 22:00h as 23:30h</option>
+                    <option>MINHA MÃE É UMA PEÇA 3  / Sessão 18:00h as 19:45h</option>
+                    <option>MINHA MÃE É UMA PEÇA 3  / Sessão 20:00h as 21:45h</option>
+                    <option>TOM E JERRY - O FILME  / Sessão 14:00h as 15:50h</option>
+                    <option>TOM E JERRY - O FILME  / Sessão 16:10h as 18:00h</option>
+                </select>
+
+                <legend class="poltrona">Número da Poltrona</legend>
+                <select  name="poltrona" id="poltrona">
+                  <option value="10"> 10</option>
+                  <option value="11"> 11</option>
+                  <option value="28"> 28</option>
+                  <option value="29"> 29</option>
+                  <option value="30"> 20</option>
+                 </select>
+              </fieldset>
+
+              <fieldset>
+                  <legend class = "titulo_categoria">Categoria do Ingresso</legend>
+                  <label class = "valor_cat" for="radio_meia"><input type="radio" name="categoria" value=meia id="radio_meia">Meia Entrada R$ 20.00</label>
+                  
+                  <label class = "valor_cat" for="radio_inteira"><input type="radio" name="categoria" value=inteira id="radio_inteira" checked>Inteira R$ 40.00</label>
+              </fieldset>
+
+              <input type="submit" value= "Salvar Ingresso" class="enviar" id="btn_compra" onclick="compraIngresso()">
+
+
+          </form>
+
+      </main>
+      <footer>
+        <p class="copyright">&copy; Capacitação T.I 2021</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+ </html>
